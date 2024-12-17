@@ -1,0 +1,118 @@
+.stories {
+    background-image: url('../../assets/stories-bg.png');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.story_section {
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 80px;
+}
+
+.story_section h2 {
+    font-family: monospace;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 50px;
+    color: #fff;
+}
+
+.story_section span {
+    color: #79C8C7;
+}
+
+.stories_cards {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.stories_cards p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    color: #ebe9e9;
+}
+
+.stories_cards h4 {
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    color: #79C8C7;
+}
+
+/* Responsive for Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .stories {
+        height: auto;
+        /* Allow content to define height */
+        padding-bottom: 40px;
+    }
+
+    .story_section {
+        padding-top: 80px;
+        gap: 50px;
+        /* Reduce spacing */
+    }
+
+    .story_section h2 {
+        font-size: 32px;
+        /* Reduce font size */
+        line-height: 40px;
+    }
+
+    .stories_cards {
+        flex-direction: column;
+        /* Stack cards vertically */
+        gap: 30px;
+        /* Adjust spacing */
+    }
+
+    .stories_cards p {
+        font-size: 14px;
+        /* Slightly smaller font */
+        line-height: 22px;
+    }
+
+    .stories_cards h4 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
+/* Responsive for Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    .story_section {
+        padding-top: 60px;
+        gap: 30px;
+    }
+
+    .story_section h2 {
+        font-size: 28px;
+        /* Further reduce font size */
+        line-height: 36px;
+    }
+
+    .stories_cards {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .stories_cards p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .stories_cards h4 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}

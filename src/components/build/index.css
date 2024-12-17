@@ -1,0 +1,123 @@
+.build_section {
+    background-image: url('../../assets/build-bg.png');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.build {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Two columns for larger screens */
+    align-items: center;
+    padding-top: 40px;
+    height: 70vh;
+}
+
+.build h2 {
+    font-family: monospace;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 80px;
+    text-align: left;
+    color: #fff;
+}
+
+.build_cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.build_card {
+    display: flex;
+    gap: 20px;
+}
+
+.build_info h3 {
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: left;
+    color: #F67E7E;
+}
+
+.build_info p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    text-align: left;
+    color: #fff;
+}
+
+/* Responsive for Tablets (768px and below) */
+@media (max-width: 768px) {
+    .build {
+        grid-template-columns: 1fr;
+        height: auto;
+        gap: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .build h2 {
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .build_card {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .build_cards {
+        gap: 20px;
+    }
+
+    .build_info h3 {
+        font-size: 16px;
+        text-align: center;
+        line-height: 24px;
+    }
+
+    .build_info p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+/* Responsive for Mobile (480px and below) */
+@media (max-width: 480px) {
+    .build {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .build h2 {
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .build_cards {
+        gap: 15px;
+    }
+
+    .build_card {
+        gap: 10px;
+    }
+
+    .build_info h3 {
+        font-size: 14px;
+        text-align: center;
+        line-height: 20px;
+    }
+
+    .build_info p {
+        font-size: 12px;
+        text-align: center;
+        line-height: 20px;
+    }
+}
